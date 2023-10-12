@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Prediction App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <p>Weather Forecast | Crafted by Shubham.mishra</p>
+      <div class="wrapper">
+        <div class="sidebar">
+          <div>
+            <form class="search" id="search">
+              <div class="container">
+                <input checked="" class="checkbox" id="query" type="checkbox">
+                <div class="mainbox">
+                    <div class="iconContainer">
+                        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                    </div>
+                 <input class="search_input" placeholder="search" type="text">
+                </div>
+            </div>
+            </form>
+            <div class="weather-icon">
+              <img id="icon" src="icons/sun/4.png" alt="" />
+            </div>
+            <div class="temperature">
+              <h1 id="temp">0</h1>
+              <span class="temp-unit">°C</span>
+            </div>
+            <div class="date-time"><p id="date-time">Monday, 12:00</p></div>
+            <div class="condition-rain">
+              <div class="condition">
+                <div class="icon">
+                  <ion-icon class="icon" name="cloud-outline"></ion-icon>
+                </div>
+                <p id="condition">condition</p>
+              </div>
+              <div class="rain">
+                <div class="icon">
+                  <ion-icon class="icon" name="water-outline"></ion-icon>
+                </div>
+                <p id="rain">percentage - 0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <div class="location-icon">
+              <ion-icon class="icon" name="location-outline"></ion-icon>
+            </div>
+            <div class="location-text">
+              <p id="location">location</p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <nav>
+            <ul class="options">
+              <button class="hourly">today</button>
+              <button class="week active">week</button>
+            </ul>
+            <ul class="options units">
+              <button class="celcius active">°C</button>
+              <button class="fahrenheit">°F</button>
+            </ul>
+          </nav>
+          <div class="cards" id="weather-cards"></div>
+          <div class="highlights">
+            <h2 class="heading">today's highlights</h2>
+            <div class="cards">
+              <div class="card2">
+                <h4 class="card-heading">UV Index</h4>
+                <div class="content">
+                  <p class="uv-index">0</p>
+                  <p class="uv-text">Low</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Wind Status</h4>
+                <div class="content">
+                  <p class="wind-speed">0</p>
+                  <p>km/h</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Sunrise & Sunset</h4>
+                <div class="content">
+                  <p class="sun-rise">0</p>
+                  <p class="sun-set">0</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Humidity</h4>
+                <div class="content">
+                  <p class="humidity">0</p>
+                  <p class="humidity-status">Normal</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Visibility</h4>
+                <div class="content">
+                  <p class="visibilty">0</p>
+                  <p class="visibilty-status">Normal</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Air Quality</h4>
+                <div class="content">
+                  <p class="air-quality">0</p>
+                  <p class="air-quality-status">Normal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Copyright &copy; 2023 by shubham mishra | All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
